@@ -2,6 +2,7 @@ let existingCode = document.getElementById("about").innerHTML;
 let replacementCode = `<section class="mb-4">
 
 <!--Section heading-->
+<div class="container w-100 override">
 <h2 class="h1-responsive font-weight-bold text-center my-4">email me</h2>
 <!--Section description-->
 <p class="text-center w-responsive mx-auto mb-5">let me know in your email how I can help!</p>
@@ -57,7 +58,7 @@ let replacementCode = `<section class="mb-4">
         </form>
 
         <div class="text-center text-md-left">
-            <a class="btn btn-info" id="sendbox" onclick="emailForm()">Send</a>
+            <a class="btn btn-primary" id="sendbox" onclick="emailForm()">Send</a>
         </div>
         <div class="status"></div>
     </div>
@@ -67,7 +68,8 @@ let replacementCode = `<section class="mb-4">
 
 </div>
 
-</section>`;
+</section>
+</div>`;
 let contactFormActive = false;
 function becomeContactForm() {
     if (document.getElementById("about").innerHTML == existingCode) {
