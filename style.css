@@ -88,6 +88,13 @@ button:hover {
     margin-bottom: .5rem;!important
 }
 
+@media (hover:hover) { .cardholder .card:hover {
+    background-color: #6477bd;
+    color: #ffffff;
+    box-shadow: 0px 1px 10px black;
+    }
+}
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 1000px) {
