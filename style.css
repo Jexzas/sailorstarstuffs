@@ -96,6 +96,20 @@ button:hover {
 }
 
 @media only screen 
+    and (max-device-width: 320px) {
+        .headerImg {
+            height: 5vh;
+        }
+    }
+@media only screen 
+    and (max-device-height: 850px) {
+        #logostuff {
+            height: 70vh;
+            position: fixed;
+            overflow-y: hidden;
+        }    
+    }
+@media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 1000px) {
       .card {
