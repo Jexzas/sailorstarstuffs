@@ -146,13 +146,17 @@ button:hover {
   and (min-device-width: 320px) 
   and (max-device-width: 1000px) {
       .card {
-          width: 70vw; !important
+          width: 70vw!important;
           margin: auto;
       }
       .about {
-          width: 100vw; !important
+          width: 100vw!important;
           margin: auto;
           overflow-y: scroll;
+      }
+
+      .wiggler {
+          animation: wiggle 1.6s infinite;
       }
       
 }
