@@ -5,6 +5,32 @@
 }
 
 /* your styling */
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 html {
     text-transform: lowercase;
     height: 100vh; 
@@ -85,13 +111,20 @@ button:hover {
     box-shadow: 0px 0px 1em  rgba(0, 0, 0, 0.2);
     padding: 0rem;
     width: 100%;
-    margin-bottom: .5rem;!important
+    margin-bottom: .5rem!important;
+
+}
+
+.wiggler:hover {
+    /* animation: wiggle 1.5s infinite; */
+    
+    transform: scale(1.06);
 }
 
 @media (hover:hover) { .cardholder .card:hover {
     background-color: #6477bd;
     color: #ffffff;
-    box-shadow: 0px 1px 10px black;
+    box-shadow: 0px 1px 10px black;   
     }
 }
 
