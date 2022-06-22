@@ -66,6 +66,10 @@ appearance: none;
     white-space: nowrap;
 }
 
+.banner {
+    margin-left: none;
+}
+
 .sidelogo {
     padding-left: 1em;
     padding-right: 1em;
